@@ -21,7 +21,6 @@ import { Card, FeaturedCard } from "@/components/Cards";
 import { useAppwrite } from "@/lib/useAppwrite";
 import { useGlobalContext } from "@/lib/global-provider";
 import images from "@/constants/images";
-import seed from "@/lib/seed";
 
 const Home = () => {
   const { user } = useGlobalContext();
@@ -32,7 +31,6 @@ const Home = () => {
 
   return (
     <SafeAreaView className="h-full bg-white">
-      <Button title="seed" onPress={seed} />
       <FlatList
         data={[1, 2, 3, 4]}
         numColumns={2}
