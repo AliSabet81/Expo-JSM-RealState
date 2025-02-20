@@ -2,13 +2,12 @@ import React, { createContext, useContext, ReactNode } from "react";
 
 import { getCurrentUser } from "./appwrite";
 import { useAppwrite } from "./useAppwrite";
-import { Redirect } from "expo-router";
 
 interface GlobalContextType {
   isLogged: boolean;
   user: User | null;
   loading: boolean;
-  refetch: (newParams?: Record<string, string | number>) => Promise<void>;
+  refetch: (newParams: Record<string, string | number>) => Promise<void>;
 }
 
 interface User {

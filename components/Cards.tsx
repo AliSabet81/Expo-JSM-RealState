@@ -14,7 +14,7 @@ export const FeaturedCard = ({ item, onPress }: Props) => {
       onPress={onPress}
       className="flex flex-col items-start w-60 h-80 relative"
     >
-      <Image source={item.image} className="size-full rounded-2xl" />
+      <Image source={{ uri: item.image }} className="size-full rounded-2xl" />
 
       <Image
         source={images.cardGradient}
@@ -63,7 +63,7 @@ export const Card = ({ item, onPress }: Props) => {
         </Text>
       </View>
 
-      <Image source={item.image} className="w-full h-40 rounded-lg" />
+      <Image source={{ uri: item.image }} className="w-full h-40 rounded-lg" />
 
       <View className="flex flex-col mt-2">
         <Text className="text-base font-rubik-bold text-black-300">
